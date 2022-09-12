@@ -628,7 +628,7 @@ class CURLRequest extends Request
             $curlOptions[CURLOPT_COOKIEFILE] = $config['cookie'];
         }
 
-        // User Agent
+        // Users Agent
         if (isset($config['user_agent'])) {
             $curlOptions[CURLOPT_USERAGENT] = $config['user_agent'];
         }

@@ -65,7 +65,7 @@ class FilterGenerator extends BaseCommand
      */
     protected $options = [
         '--namespace' => 'Set root namespace. Default: "APP_NAMESPACE".',
-        '--suffix'    => 'Append the component title to the class name (e.g. User => UserFilter).',
+        '--suffix'    => 'Append the component title to the class name (e.g. Users => UserFilter).',
         '--force'     => 'Force overwrite existing file.',
     ];
 

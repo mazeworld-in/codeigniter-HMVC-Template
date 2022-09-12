@@ -98,7 +98,7 @@ class UserAgent
     /**
      * Constructor
      *
-     * Sets the User Agent and runs the compilation routine
+     * Sets the Users Agent and runs the compilation routine
      */
     public function __construct(?UserAgents $config = null)
     {
@@ -268,7 +268,7 @@ class UserAgent
     }
 
     /**
-     * Compile the User Agent Data
+     * Compile the Users Agent Data
      */
     protected function compileData()
     {

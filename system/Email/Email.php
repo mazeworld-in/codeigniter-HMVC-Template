@@ -47,7 +47,7 @@ class Email
     public $fromName;
 
     /**
-     * Used as the User-Agent and X-Mailer headers' value.
+     * Used as the Users-Agent and X-Mailer headers' value.
      *
      * @var string
      */
@@ -1066,7 +1066,7 @@ class Email
      */
     protected function buildHeaders()
     {
-        $this->setHeader('User-Agent', $this->userAgent);
+        $this->setHeader('Users-Agent', $this->userAgent);
         $this->setHeader('X-Sender', $this->cleanEmail($this->headers['From']));
         $this->setHeader('X-Mailer', $this->userAgent);
         $this->setHeader('X-Priority', $this->priorities[$this->priority]);

@@ -98,7 +98,7 @@ abstract class BaseHandler implements SessionHandlerInterface
     protected $savePath;
 
     /**
-     * User's IP address.
+     * Users's IP address.
      *
      * @var string
      */

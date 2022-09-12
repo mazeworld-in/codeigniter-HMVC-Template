@@ -6,6 +6,6 @@ class Admin extends \CodeIgniter\Controller
 {
     public function index()
     {
-        echo 'admin controllers';
+        return view('index');
     }
 }

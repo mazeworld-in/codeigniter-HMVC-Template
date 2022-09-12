@@ -120,3 +120,101 @@ in ROOTPATH\Modules\Admin\Config\Routes.php on line 4.
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:17:38 --> Invalid file: index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 3 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:20:03 --> Class "Services" not found
+in APPPATH\Common.php on line 34.
+ 1 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('index')
+ 2 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:26:38 --> Invalid file: Modules/Admin/Controllers/Admin/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Admin/Controllers/Admin/index.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules/Admin/Controllers/Admin/index', [], true)
+ 3 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('Modules/Admin/Controllers/Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:27:27 --> Invalid file: Modules/Admin/Views/Admin/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Admin/Views/Admin/index.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules/Admin/Views/Admin/index', [], true)
+ 3 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('Modules/Admin/Views/Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:27:55 --> Invalid file: Modules/Admin/Views/Admin/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Admin/Views/Admin/index.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules/Admin/Views/Admin/index', [], true)
+ 3 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('Modules/Admin/Views/Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:27:56 --> Invalid file: Modules/Admin/Views/Admin/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Admin/Views/Admin/index.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules/Admin/Views/Admin/index', [], true)
+ 3 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('Modules/Admin/Views/Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:27:57 --> Invalid file: Modules/Admin/Views/Admin/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Admin/Views/Admin/index.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules/Admin/Views/Admin/index', [], true)
+ 3 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('Modules/Admin/Views/Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:27:57 --> Invalid file: Modules/Admin/Views/Admin/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Admin/Views/Admin/index.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules/Admin/Views/Admin/index', [], true)
+ 3 ROOTPATH\Modules\Admin\Controllers\Admin.php(9): view('Modules/Admin/Views/Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\Admin\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Admin\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:30:39 --> Invalid file: Modules\User\Views\Users\viapn.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\User\\Views\\Users\\viapn.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules\\User\\Views\\Users\\viapn', [], true)
+ 3 ROOTPATH\Modules\User\Controllers\Users.php(9): view('Modules\\User\\Views\\Users\\viapn')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\User\Controllers\Users->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\User\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 09:30:47 --> Invalid file: Modules\User\Views\Users\index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\User\\Views\\Users\\index.php')
+ 2 APPPATH\Common.php(53): CodeIgniter\View\View->render('Modules\\User\\Views\\Users\\index', [], true)
+ 3 ROOTPATH\Modules\User\Controllers\Users.php(9): view('Modules\\User\\Views\\Users\\index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): Modules\User\Controllers\Users->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\User\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -53,14 +53,14 @@ class URI
     protected $scheme = 'http';
 
     /**
-     * URI User Info
+     * URI Users Info
      *
      * @var string
      */
     protected $user;
 
     /**
-     * URI User Password
+     * URI Users Password
      *
      * @var string
      */

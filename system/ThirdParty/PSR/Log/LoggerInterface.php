@@ -91,7 +91,7 @@ interface LoggerInterface
     /**
      * Interesting events.
      *
-     * Example: User logs in, SQL logs.
+     * Example: Users logs in, SQL logs.
      *
      * @param string  $message
      * @param mixed[] $context

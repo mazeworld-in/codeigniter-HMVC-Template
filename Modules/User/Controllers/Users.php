@@ -6,6 +6,6 @@ class Users extends \CodeIgniter\Controller
 {
     public function index()
     {
-        echo "Users=>Index";
+        return view("index");
     }
 }

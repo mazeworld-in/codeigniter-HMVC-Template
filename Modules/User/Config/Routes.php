@@ -1,5 +1,3 @@
 <?php
 
-global $routes;
-
-$routes->get('/', '\Modules\Admin\Controllers\Users::index');
+$routes->get('user', '\Modules\User\Controllers\Users::index');

@@ -35,7 +35,7 @@ if (! function_exists('view')) {
         if($name == ''){
             $name = $caller;
         }
-        if(empty($dbt[1]['class'])){}
+        if(empty($dbt[1]['class']) || stripos($dbt[1]['class'],'APP\\Controllers', ) !== false){}
         else{
             $name = str_replace('Controllers','Views',$dbt[1]['class']).'\\'.$name;
         }

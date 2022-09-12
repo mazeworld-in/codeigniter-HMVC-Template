@@ -58,8 +58,8 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
  * Include Modules Routes Files
  * --------------------------------------------------------------------
  */
-if (file_exists(ROOTPATH.'modules')) {
-    $modulesPath = ROOTPATH.'modules/';
+if (file_exists(ROOTPATH.'Modules')) {
+    $modulesPath = ROOTPATH.'Modules/';
     $modules = scandir($modulesPath);
 
     foreach ($modules as $module) {

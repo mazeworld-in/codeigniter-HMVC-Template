@@ -1,1 +1,2 @@
-Tthis is admin page<?php
+<?php echo $this->extend('admin');?>
+admin page

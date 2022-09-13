@@ -24,7 +24,7 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
-    <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.min.css');?>">
+    <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -43,6 +43,24 @@
             </div>
         </section>
     </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; <?= date('Y') ?>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> <?= CodeIgniter\CodeIgniter::CI_VERSION ?> @Mode: <?= ENVIRONMENT ?>
+        </div>
+        <div class="environment">
+            <p>Page rendered in {elapsed_time} seconds</p>
+            <p>Environment: <?= ENVIRONMENT ?></p>
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
 </div>
 </body>
 </html>

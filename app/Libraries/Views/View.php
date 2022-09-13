@@ -90,6 +90,8 @@ class View extends BaseView
             array_pop($pt);
             array_pop($pt);
             $layoutView   = '/'.str_replace('\\','/', str_replace('Views','Layouts', implode('\\',$pt)).'\\'.$this->layout);
+            $dbt=debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,2);
+//            $layoutView = str_replace('\\','/', dirname(dirname($dbt[1]['file']))).'/Layouts/'.$this->layout;
             $this->layout = null;
             // Save current vars
 

@@ -88,8 +88,8 @@ class View extends BaseView
         if ($this->layout !== null && $this->sectionStack === []) {
             $pt = explode('\\', dirname($realPath));
             array_pop($pt);
-            var_dump($realPath);
-            $layoutView   = str_replace('Views','Layouts', implode('\\',$pt)).'\\'.$this->layout;
+            var_dump($realPath, $pt);
+            echo $layoutView   = str_replace('Views','Layouts', implode('\\',$pt)).'\\'.$this->layout;
             $this->layout = null;
             // Save current vars
 

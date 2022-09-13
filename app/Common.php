@@ -43,7 +43,7 @@ if (! function_exists('view')) {
             $name = str_replace('Controllers','Views',$dbt[1]['class']).'\\'.$name;
 
             $pth = ROOTPATH.str_replace('Controllers','Views',$dbt[1]['class']);
-            $renderer = Services::renderer($pth, null, false);
+            $renderer = Services::renderer(ROOTPATH, null, false);
         }
         /**
          * @var CodeIgniter\View\View $renderer

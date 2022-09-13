@@ -29,7 +29,6 @@ class View extends BaseView
      */
     public function render(string $view, ?array $options = null, ?bool $saveData = null): string
     {
-        die('aaaa');
         $this->renderVars['start'] = microtime(true);
 
         // Store the results here so even if
@@ -38,6 +37,7 @@ class View extends BaseView
         $saveData ??= $this->saveData;
         $fileExt                     = pathinfo($view, PATHINFO_EXTENSION);
         $realPath                    = empty($fileExt) ? $view . '.php' : $view; // allow Views as .html, .tpl, etc (from CI3)
+
         $this->renderVars['view']    = $realPath;
         $this->renderVars['options'] = $options ?? [];
 
@@ -56,7 +56,6 @@ class View extends BaseView
         }
 
         $this->renderVars['file'] = $this->viewPath . $this->renderVars['view'];
-
         if (! is_file($this->renderVars['file'])) {
             $this->renderVars['file'] = $this->loader->locateFile($this->renderVars['view'], 'Views', empty($fileExt) ? 'php' : $fileExt);
         }
@@ -87,9 +86,12 @@ class View extends BaseView
         // in $this->sections, and no other valid output
         // is allowed in $output so we'll overwrite it.
         if ($this->layout !== null && $this->sectionStack === []) {
-            $layoutView   = $this->layout;
+            $pt = explode('\\', dirname($realPath));
+            array_pop($pt);
+            $layoutView   = str_replace('Views','Layouts', implode('\\',$pt)).'\\'.$this->layout;
             $this->layout = null;
             // Save current vars
+
             $renderVars = $this->renderVars;
             $output     = $this->render($layoutView, $options, $saveData);
             // Get back current vars

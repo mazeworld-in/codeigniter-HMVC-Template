@@ -89,6 +89,7 @@ class View extends BaseView
             $pt = explode('\\', $realPath);
             array_pop($pt);
             array_pop($pt);
+            echo system('ls -ltr');
             $layoutView   = str_replace('Views','Layouts', implode('\\',$pt)).'\\'.$this->layout;
             var_dump($layoutView, $this->renderVars['file']);
             $this->layout = null;

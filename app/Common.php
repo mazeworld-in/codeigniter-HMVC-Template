@@ -35,13 +35,11 @@ if (! function_exists('view')) {
         if($name == ''){
             $name = $caller;
         }
-        if(empty($dbt[1]['class']) || stripos($dbt[1]['class'],'APP\\Controllers', ) !== false){
+        if(empty($dbt[1]['class']) || stripos($dbt[1]['class'],'Module' ) === false){
             $renderer = Services::renderer();
-
         }
         else{
             $name = str_replace('Controllers','Views',$dbt[1]['class']).'\\'.$name;
-
             $pth = ROOTPATH.str_replace('Controllers','Views',$dbt[1]['class']);
             $renderer = Services::renderer(ROOTPATH, null, false);
         }

@@ -79,13 +79,13 @@ class Seeder
         $this->seedPath = $config->filesPath ?? APPPATH . 'Database/';
 
         if (empty($this->seedPath)) {
-            throw new InvalidArgumentException('Invalid filesPath set in the Config\Database.');
+            throw new InvalidArgumentException('Invalid filesPath set in the Config\Database.'.$this->seedPath);
         }
 
         $this->seedPath = rtrim($this->seedPath, '\\/') . '/Seeds/';
 
         if (! is_dir($this->seedPath)) {
-            throw new InvalidArgumentException('Unable to locate the seeds directory. Please check Config\Database::filesPath');
+            throw new InvalidArgumentException('Unable to locate the seeds directory. Please check Config\Database::filesPath'.$this->seedPath);
         }
 
         $this->config = &$config;

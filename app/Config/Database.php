@@ -15,7 +15,7 @@ class Database extends Config
      *
      * @var string
      */
-    public $filesPath = APPPATH . 'Database' . DIRECTORY_SEPARATOR;
+    private $filesPath = APPPATH . 'Database' . DIRECTORY_SEPARATOR;
 
     /**
      * Lets you choose which connection group to
@@ -76,16 +76,29 @@ class Database extends Config
         'port'        => 3306,
         'foreignKeys' => true,
     ];
-
+    private ?Autoload $autoload = null;
     public function __construct()
     {
         parent::__construct();
-
+        $this->autoload = new Autoload();
         // Ensure that we always set the database group to 'tests' if
         // we are currently running an automated test suite, so that
         // we don't overwrite live data on accident.
         if (ENVIRONMENT === 'testing') {
             $this->defaultGroup = 'tests';
+        }
+    }
+
+    public function __get($key)
+    {
+        if($key == 'filesPath'){
+            foreach($_SERVER['argv'] as $val){
+                if(strpos($val, '--namespace') !==false){
+                    $namespace = str_replace('--namespace=', '', $val);
+                    return $this->autoload->psr4[$namespace]. DIRECTORY_SEPARATOR.'Database' . DIRECTORY_SEPARATOR;
+                }
+            }
+            return $this->filesPath;
         }
     }
 }

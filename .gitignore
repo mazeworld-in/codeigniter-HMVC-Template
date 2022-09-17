@@ -17,3 +17,4 @@ application/logs/*
 !application/logs/.htaccess
 /vendor/
 /writable/
+/public/null/*

@@ -1,5 +1,6 @@
 <?php $this->extend('guest');?>
 <?php $this->section('content'); ?>
+<?php $validation =  \Config\Services::validation(); ?>
 <div class="register-box">
     <div class="register-logo">
         <a href="../../index2.html"><b>Admin</b>LTE</a>
@@ -8,29 +9,45 @@
         <div class="card-body register-card-body">
             <p class="login-box-msg">Register a new membership</p>
             <form action="<?= base_url('admin/create') ?>" method="post">
+                <?= csrf_field() ?>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Full name">
+                    <input type="text" class="form-control <?php if ($validation->getError('name')) : ?>is-invalid<?php endif ?>" name="name" placeholder="Full name">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>
                         </div>
                     </div>
+                    <?php if ($validation->getError('name')) : ?>
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('name') ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control <?php if ($validation->getError('email')) : ?>is-invalid<?php endif ?>" name="email" placeholder="Email">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-envelope"></span>
                         </div>
                     </div>
+                    <?php if ($validation->getError('email')) : ?>
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('email') ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control <?php if ($validation->getError('password')) : ?>is-invalid <?php endif ?>" name="password" placeholder="Password">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
                         </div>
                     </div>
+                    <?php if ($validation->getError('password')) : ?>
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('password') ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="input-group mb-3">
                     <input type="password" class="form-control" placeholder="Retype password">

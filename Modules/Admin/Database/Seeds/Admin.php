@@ -4,6 +4,7 @@ namespace Modules\Admin\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 use CodeIgniter\I18n\Time;
+use Faker\Factory as Faker;
 use Modules\Admin\Models\Admin as AdminModel;
 class Admin extends Seeder
 {
@@ -11,7 +12,7 @@ class Admin extends Seeder
     {
 
         $user = new AdminModel();
-        $faker = \Faker\Factory::create();
+        $faker = Faker::create();
         for ($i = 0; $i < 10; $i++) {
             $user->save(
                 [

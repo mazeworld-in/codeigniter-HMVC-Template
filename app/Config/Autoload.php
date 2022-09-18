@@ -44,7 +44,8 @@ class Autoload extends AutoloadConfig
         APP_NAMESPACE => APPPATH, // For custom app namespace
         'Config'      => APPPATH . 'Config',
         'Modules' =>  ROOTPATH.'Modules',
-        'Modules\Admin' => ROOTPATH.'Modules'.DIRECTORY_SEPARATOR.'Admin'
+        'Modules\Admin' => ROOTPATH.'Modules'.DIRECTORY_SEPARATOR.'Admin',
+        'Modules\User' => ROOTPATH.'Modules'.DIRECTORY_SEPARATOR.'User'
     ];
 
     /**

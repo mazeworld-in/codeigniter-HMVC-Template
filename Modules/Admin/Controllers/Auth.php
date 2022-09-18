@@ -31,7 +31,13 @@ class Auth extends Guest
         $inputs = $this->validate([
             'name' => 'required|min_length[5]',
             'email' => 'required|valid_email|is_unique[users.email]',
-            'password' => 'required|min_length[5]'
+            'password' => 'required|min_length[5]',
+            'confirm_password' => 'required|matches[password]'
+        ], [
+            'confirm_password'=> [
+                'required'=>'Retype Password is required',
+                'match' => 'Retype password is miss matched'
+            ]
         ]);
 
         if (!$inputs) {
@@ -75,14 +81,14 @@ class Auth extends Guest
 
             if ($authPassword) {
                 $sessionData = [
-                    'id' => $user['id'],
-                    'name' => $user['name'],
-                    'email' => $user['email'],
-                    'loggedIn' => true,
+                    'admin.id' => $user['id'],
+                    'admin.name' => $user['name'],
+                    'admin.email' => $user['email'],
+                    'admin.loggedIn' => true,
                 ];
 
                 $this->session->set($sessionData);
-                return redirect()->to('dashboard');
+                return redirect()->to('admin');
             }
 
             session()->setFlashdata('failed', 'Failed! incorrect password');

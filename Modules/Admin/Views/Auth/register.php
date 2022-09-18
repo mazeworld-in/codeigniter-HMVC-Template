@@ -3,7 +3,7 @@
 <?php $validation =  \Config\Services::validation(); ?>
 <div class="register-box">
     <div class="register-logo">
-        <a href="../../index2.html"><b>Admin</b>LTE</a>
+        <b>Admin Panel</b>
     </div>
     <div class="card">
         <div class="card-body register-card-body">
@@ -50,12 +50,17 @@
                     <?php endif; ?>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Retype password">
+                    <input type="password" class="form-control <?php if ($validation->getError('confirm_password')) : ?>is-invalid <?php endif ?>" name="confirm_password" placeholder="Retype password">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
                         </div>
                     </div>
+                    <?php if ($validation->getError('confirm_password')) : ?>
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('confirm_password') ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="row">
                     <div class="col-8">
@@ -84,7 +89,7 @@
                     Sign up using Google+
                 </a>
             </div>
-            <a href="login.html" class="text-center">I already have a membership</a>
+            <a href="<?= base_url('admin/login') ?>" class="text-center">I already have a membership</a>
         </div>
     </div>
 </div>

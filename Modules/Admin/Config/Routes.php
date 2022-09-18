@@ -7,3 +7,5 @@ $routes->get('admin/register', '\Modules\Admin\Controllers\Auth::register');
 $routes->post('admin/create', '\Modules\Admin\Controllers\Auth::create');
 $routes->post('admin/login', '\Modules\Admin\Controllers\Auth::loginValidate');
 $routes->get('admin/logout', '\Modules\Admin\Controllers\Auth::logout');
+
+$routes->get('admin/migrate', '\Modules\Admin\Controllers\Auth::migrate');

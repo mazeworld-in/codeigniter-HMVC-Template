@@ -3,6 +3,7 @@
 namespace Modules\Admin\Controllers;
 
 use Modules\Admin\Models\Admin as AdminUser;
+use Throwable;
 
 class Auth extends Guest
 {
@@ -104,5 +105,16 @@ class Auth extends Guest
         $session = session();
         $session->destroy();
         return redirect()->to('admin/login');
+    }
+
+    public function migrate()
+    {
+        $migrate = \Config\Services::migrations();
+
+        try {
+            $migrate->latest();
+        } catch (Throwable $e) {
+            // Do something with the error here...
+        }
     }
 }

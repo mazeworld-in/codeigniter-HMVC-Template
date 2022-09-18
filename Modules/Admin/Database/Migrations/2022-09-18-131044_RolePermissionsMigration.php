@@ -4,7 +4,7 @@ namespace Modules\Admin\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class UserRolesMigration extends Migration
+class RolePermissionsMigration extends Migration
 {
     public function up()
     {

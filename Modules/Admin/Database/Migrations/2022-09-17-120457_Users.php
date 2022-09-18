@@ -21,6 +21,9 @@ class Users extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '255'
             ],
+            'role_id' => [
+                'type' => 'INT',
+            ],
             'password' => [
                 'type' => 'VARCHAR',
                 'constraint' => '255'
@@ -29,6 +32,7 @@ class Users extends Migration
             'updated_at datetime default current_timestamp on update current_timestamp'
         ]);
         $this->forge->addKey('id', true);
+        $this->forge->addKey('role_id', false);
         $this->forge->createTable('users');
     }
 

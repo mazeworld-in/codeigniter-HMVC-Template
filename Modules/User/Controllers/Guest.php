@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Controllers;
+namespace Modules\User\Controllers;
 
 use CodeIgniter\Controller;
 

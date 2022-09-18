@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\Admin\Controllers;
+namespace Modules\User\Controllers;
 
-use Modules\Admin\Models\Admin as AdminUser;
+use Modules\User\Models\Admin as AdminUser;
 
 class Auth extends Guest
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Validation;
+namespace Modules\User\Validation;
 
 class UserLoginValidation
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Filters;
+namespace Modules\User\Filters;
 
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -12,8 +12,8 @@ class Auth implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         // TODO: Implement before() method.
-        if(!session('admin.loggedIn')){
-            return redirect('admin/login');
+        if(!session('user.loggedIn')){
+            return redirect('user/login');
         }
     }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Admin\Models;
+namespace Modules\User\Models;
 
 use CodeIgniter\Model;
 
-class Admin extends Model
+class User extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'users';

@@ -1,5 +1,7 @@
 # CodeIgniter 4 Framework
 
+![Codeigniter HMVC](https://repository-images.githubusercontent.com/535586886/1c2aea46-dc83-4855-874f-6980eb07b8ed)
+
 ## What is CodeIgniter?
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
